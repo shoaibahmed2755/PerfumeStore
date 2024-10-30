@@ -193,27 +193,27 @@ header .fa-bars {
     background: #eee;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem; /* Increased gap for better spacing */
+    gap: 2rem; 
     padding-top: 5rem;
     padding-bottom: 5rem;
-    justify-content: center; /* Center align the icons */
+    justify-content: center; 
 }
 
 .icons-container .icons {
-    background: #fff; /* Change background to white for contrast */
+    background: #fff; 
     border: 1rem solid rgba(0, 0, 0, 0.1);
     padding: 2rem;
     display: flex;
     align-items: center;
-    flex: 1 1 20rem; /* Adjust the flex-basis to control width */
-    max-width: 25rem; /* Set a maximum width */
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
-    border-radius: 10px; /* Optional: Add rounded corners */
+    flex: 1 1 20rem; 
+    max-width: 25rem; 
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
 }
 
 .icons-container .icons img {
-    max-width: 80px; /* Set a max width for images */
-    margin-right: 1.5rem; /* Add spacing between image and text */
+    max-width: 80px; 
+    margin-right: 1.5rem; 
 }
 .icons-container .icons h3{
     color: #333;
@@ -236,14 +236,14 @@ header .fa-bars {
     border-radius: .5rem;
     border: 1rem solid rgba(0, 0, 0, 0.1);
     position: relative;
-    overflow: hidden; /* Ensure overflow is hidden for hover effect */
+    overflow: hidden; 
 }
 
 .products .box-container .box .discount {
     position: absolute;
     top: 1rem; 
     left: 1rem; 
-    padding: 0.5rem 1rem; /* Adjust padding for better appearance */
+    padding: 0.5rem 1rem; 
     font-size: 2rem;
     color: var(--pink);
     background: rgba(255, 51, 153, 0.05);
@@ -259,22 +259,25 @@ header .fa-bars {
 
 .products .box-container .box .image img {
     height: 25rem;
-    transition: transform 0.3s; /* Add transition for smooth scaling */
+    transition: transform 0.3s; 
 }
 
 .products .box-container .box:hover .image img {
-    transform: scale(1.1); /* Scale up the image on hover */
+    transform: scale(1.1); 
 }
 
 .products .box-container .box .image .icons {
     position: absolute;
-    bottom: -8rem; 
+    bottom: -5rem; 
     left: 0; 
     right: 0;
     display: flex;
+    opacity: 0;
+    transition: bottom 0.3s, opacity 0.3s;
 }
 .products .box-container .box:hover .image .icons{
     bottom: 0;
+    opacity: 1;
 }
 
 .products .box-container .box .image .icons a {
@@ -284,7 +287,7 @@ header .fa-bars {
     width: 50%;
     background: var(--pink);
     color: #eee;
-    transition: background 0.3s; /* Add transition for button hover */
+    transition: background 0.3s; 
 }
 
 .products .box-container .box .image .icons .fa-shopping-cart {
@@ -293,7 +296,7 @@ header .fa-bars {
 }
 
 .products .box-container .box .image .icons a:hover {
-    background: #333; /* Change background color on hover */
+    background: #333; 
 }
 .products .box-container .box .content{
     padding: 2rem;
