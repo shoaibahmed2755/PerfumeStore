@@ -189,9 +189,41 @@ header .fa-bars {
     padding-top: 1rem;
     line-height: 1.5;
 }
+.icons-container {
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Increased gap for better spacing */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: center; /* Center align the icons */
+}
 
+.icons-container .icons {
+    background: #fff; /* Change background to white for contrast */
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 20rem; /* Adjust the flex-basis to control width */
+    max-width: 25rem; /* Set a maximum width */
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
 
-
+.icons-container .icons img {
+    max-width: 80px; /* Set a max width for images */
+    margin-right: 1.5rem; /* Add spacing between image and text */
+}
+.icons-container .icons h3{
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}
 
 
 
@@ -288,6 +320,13 @@ header .fa-bars {
     .home .content span {
         font-size: 2.55rem;
     }
+    .icons-container .icons h3{
+        font-size: 2rem;
+    }
+    .icons-container .icons span{
+        font-size: 1.3rem;
+    }
+    
 }
 
 @media (max-width:450px) {
