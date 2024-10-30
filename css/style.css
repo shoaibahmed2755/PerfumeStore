@@ -1,8 +1,9 @@
-:root{
-    --pink:#e84393;
-    
+:root {
+    --pink: rgb(192, 143, 87);
+
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,18 +15,46 @@
     transition: .2s linear;
 }
 
-html{
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
 
-section{
-    padding:2rem 9%;
+section {
+    padding: 2rem 9%;
 }
 
-header{
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgb(221, 176, 124);
+}
+
+.heading span{
+    
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: var(--pink);
+}
+
+
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -39,41 +68,41 @@ header{
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-header .logo{
+header .logo {
     font-size: 3rem;
     color: #333;
     font-weight: bolder;
 }
 
-header .logo span{
+header .logo span {
     color: var(--pink);
 }
 
-header .navbar a{
+header .navbar a {
     font-size: 2rem;
     padding: 0 1.5rem;
     color: #666;
 }
 
-header .navbar a:hover{
+header .navbar a:hover {
     color: var(--pink);
 }
 
-header .icons a{
+header .icons a {
     font-size: 2rem;
     padding: 0 1.5rem;
     color: #666;
 }
 
-header .icons a:hover{
+header .icons a:hover {
     color: var(--pink);
 }
 
-header #toggler{
+header #toggler {
     display: none;
 }
 
-header .fa-bars{
+header .fa-bars {
     font-size: 3rem;
     color: #333;
     border-radius: .5rem;
@@ -83,15 +112,37 @@ header .fa-bars{
     display: none;
 }
 
-.home{
-    display:flex;
+.home {
+    display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(/images/Screenshot\ 2024-10-30\ 153204.png) no-repeat;
+    background: url(/images/bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+.home .content {
+    max-width: 50rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: rgb(192, 143, 87);
+}
+
+.home .content span {
+    font-size: 3.5rem;
+    color: rgb(229, 138, 138);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    color: #504f4f;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
 
 
 
@@ -143,39 +194,62 @@ header .fa-bars{
 
 
 
-
-@media (max-width:991px){
-    html{
+@media (max-width:991px) {
+    html {
         font-size: 55%;
     }
-    header{
+
+    header {
         padding: 2rem;
     }
+
+    section {
+        padding: 2rem;
+    }
+
+    .home {
+        background-position: left;
+    }
 }
-@media (max-width:768px){
-    html .fa-bars{
+
+@media (max-width:768px) {
+    html .fa-bars {
         display: block;
     }
-    header .navbar{
+
+    header .navbar {
         position: absolute;
-        top: 100%;left: 0;right: 0;
+        top: 100%;
+        left: 0;
+        right: 0;
         background: #eee;
         border-top: .1rem solid rgba(0, 0, 0, 0.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
-    header #toggler:checked ~ .navbar{
+
+    header #toggler:checked~.navbar {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-    header .navbar a{
+
+    header .navbar a {
         margin: 1.5rem;
         padding: 1.5rem;
         background: #fff;
-        border:.1rem solid rgba(0, 0, 0, 0.1);
+        border: .1rem solid rgba(0, 0, 0, 0.1);
         display: block;
     }
+
+    .home .content h3 {
+        font-size: 5rem;
+    }
+
+    .home .content span {
+        font-size: 2.55rem;
+    }
 }
-@media (max-width:450px){
-    html{
+
+@media (max-width:450px) {
+    html {
         font-size: 50%;
     }
 }
