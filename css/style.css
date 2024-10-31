@@ -318,13 +318,60 @@ header .fa-bars {
     font-weight: lighter;
     text-decoration: line-through;
 }
+.review .box-conta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 
+}
+.review .box-conta .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+}
+.review .box-conta .box .fa-quote-right {
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #eee;
+}
+}
+.review .box-conta .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
 
+}
+.review .box-conta .box .stars i{
+    color: var(--pink);
+    font-size: 2rem;
+}
+.review .box-conta .box  p{
+    color: #999;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+.review .box-conta .box .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
 
-
-
-
-
+}
+.review .box-conta .box .user h3{
+    font-size: 2rem;
+    color: #333;
+}
+.review .box-conta .box .user span{
+    font-size: 1.5rem;
+    color: #333;
+}
 
 
 
